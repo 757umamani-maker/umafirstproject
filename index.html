@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>My First Day Of Learning Web Development</h1>
+        <ul>
+            <li><a href="index.html">1st lecture</a></li>
+            <li><a href="day2.html">2nd lecture</a></li>
+            <li><a href="day3.html">3rd lecture</a></li>
+            <li><a href="day4.html">4th lecture</a></li>
+            <li><a href="day5.html">5th lecture</a></li>
+            <li><a href="day6.html">6th lecture</a></li>
+        </ul>
+    </header>
+    <main>
+       <h3>How Data Transfer Between Two Computers?</h3>  
+       <p>In whatshapp when we chat with anyone how the message we sent is received by other person.</p>
+       <p>This is done with the help of IP(internet protocol) address.We thought that only message was sent but the reality is that not only message but the IP address of sender and receiver was also sent.How it was sent is shown below:</p>
+       <table border="1">
+        <tr>
+            <td>Sender IP address</td>
+            <td>Message</td>
+            <td>Receiver IP address</td>
+        </tr>
+       </table>
+       <hr>
+       <h3>What Is IP address?</h3>
+       <p>It is temporary address provide by ISP(internet service provider) when any device connected to internet.</p>
+       <p>If any user switch off internet for sometime and reconnect to internet after sometime then the IP address maybe same as earlier or maybe different.</p>
+       <h3>What is DNS?</h3>
+       <p>It is the book which have IP address of all the websites.</p>
+       <p>So whatever website for which you send request,it first comes to DNS(Domain Name System) and DNS gave your computer the IP address of that website.</p>
+       <p>Now your computer have the receiver IP address so it send request to that server.</p>
+       <hr>
+       <h3>In Depth of DNS</h3>
+       <p>DNS is made with combination of:</p>
+       <ul>
+        <li>Recursive server</li>
+        <li>Root server (There are total 13 root server globally)</li>
+        <li>TLD(Top Level Domain) server</li>
+        <li>Authoritative server</li>
+       </ul>
+       <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSejYp3lZdcdlZNyBuji5tTkXJ-kkRur1MbGL0TCHsrE-dADE54" height="200px" alt="image">
+       <hr>
+       <p>Now suppose you are searching for any reel in instagram and you send the request to instagram and after that you disconnect from internet for sometime.</p>
+       <p>When you reconnect to your internet it is not compulsory that ISP gave you the same IP address as before.Suppose you get the another IP address and you are waiting for your result but the result was sent to the IP address you have earlier.</p>
+       <p>And at present time the IP address you have earlier have been already given to any device (which is connected to internet at that time when you disconnect).So your result will show in other device.</p>
+       <p>If it is not a reel but a confidential data then you maybe in danger.So in this case we introduce MAC address.</p>
+       <hr>
+       <h3>What Is MAC address?</h3>
+       <p>MAC(Medium Access Control) address is permanent physical address of your device.</p>
+       <p>So if your result was sent to IP address you have earlier the result will not open because the IP address is same but the MAC address is different.</p>
+       <p>In this way your confidential data is protected.So the request send from your computer to instagram server in this way:</p>
+       <table border="1">
+        <tr>
+            <td>Sender IP address</td>
+            <td>Sender MAC address</td>
+            <td>Request</td>
+            <td>Receiver IP address</td>
+            <td>Receiver MAC address</td>
+        </tr>
+       </table>
+       <p>So if by chance you disconnected from internet then also you get your result because your device has permanent MAC address.</p>
+       <hr>
+       <h3>What is Port Numbers?</h3>
+       <p>Suppose you get the data from server you want but you have opened so many apps so how the computer can understand that where the data is opened.</p>
+       <p>So here for rescue we use port number.Suppose you want your data to be opened at whatshapp so not only the IP and MAC address was sent but also the port number of place where you want to open it was also sent.</p>
+       <p>So now it is like this:</p>
+       <ul>
+        <li>S-sender</li>
+        <li>R-receiver</li>
+       </ul>
+       <table border="1">
+         <tr>
+            <td>S IP address</td>
+            <td>S MAC address</td>
+            <td>S Port number</td>
+            <td>Data</td>
+            <td>R IP address</td>
+            <td>R MAC address</td>
+            <td>R Port number</td>
+         </tr>
+       </table>
+       <hr>
+       <h3>How Internet Works?</h3>
+       <p>In older times we can transfer data through:</p>
+       <ol>
+        <li>Pendrive</li>
+        <li>Cables</li>
+       </ol>
+       <p>Both are not practical ways to transfer data in large scale. </p>
+       <p>So here we introduce LAN.</p>
+       <h3>What is LAN?</h3>
+       <P>LAN is a local area network where we connect many computers to a single switch.So whenever we want to transfer data from one computer to other then we sent it to switch and further switch sent it to that computer.So we didn't need many cables to connect many computers we simply connect them to single switch.</P>
+       <p>In this way only there are many Local Area Network all over the world.</p>
+       <p>Now suppose you want to transfer data from one computer in one LAN to other computer in another LAN so how it is possible?</p>
+       <p>For this we use Router.</p>
+       <p>Router is a device which connected to LAN and helps to transfer data from one LAN to other.</p>
+       <p>Every LAN has its own Router.And all Routers are connected globally.</p>
+       <hr>
+       <h3>IMPORTANT POINTS</h3>
+       <ul>
+        <li>Port Number of:</li>
+           <ol>
+            <li>http-80</li>
+            <li>https-443</li>
+           </ol>
+        <li>In https your data is secure whatever message you write is hidden.While in http your data is not secure.</li>
+        <li>IPV4:32 Bit</li>
+        <li>IPV6:128 Bit</li>
+        <li>MAC address:48 Bit (Hexadecimal form)</li>
+        <li>There is not only one MAC address in one device rather
+            <br>
+            The total no. of MAC address in device=Total no. of ways in which data can transfer
+        </li>
+        <li>Port Number:16 bit(unsigned integer)</li>
+       </ul>
+    </main>
+</body>
+</html>
