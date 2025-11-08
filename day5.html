@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <h1>My Fifth Day Of Learning Web Development</h1>
+        <ul>
+            <li><a href="index.html">1st lecture</a></li>
+            <li><a href="day2.html">2nd lecture</a></li>
+            <li><a href="day3.html">3rd lecture</a></li>
+            <li><a href="day4.html">4th lecture</a></li>
+            <li><a href="day5.html">5th lecture</a></li>
+            <li><a href="day6.html">6th lecture</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>HTML Form</h2>
+        <ol>
+            <li>Whenever you want to create form you have to use form tag.</li>
+            <li>Whenever you want to provide a box to user to fill information it is created by using input tag.</li>
+            <li>And you have to mention type inside input tag that what kind of data you want to enter.</li>
+            <li>To inform user that what he should fill in that boxes you have to use label tag.</li>
+            <li>Whatever information user filled in form, it stored in backend in the form of name=value.</li>
+            <li>So you have to add name keyword in input so that backend can understand that how these values will store.</li>
+            <li>Many time you have noticed that in form you have option in question and you have to choose one it is done with the help of radio type.</li>
+            <li>for and id is same in label and input respectively.They are used to connect label and input.</li>
+            <li>In radio type you have to enter value attribute otherwise the value stored in backend will be on or off by default.</li>
+            <li>Also in form there are questions in which you have to select more than one option it is done with the help of checkboxes type.In this also you have to give value attribute.</li>
+            <li>Placeholder attribute is used so that you give hint to user that in which way he should enter information.</li>
+            <li>You have input type like date,file,email,tel etc.</li>
+            <li>Textarea is used when you have to enter many information in one box.It is not a normal text.</li>
+            <li>For dropdown you use select tag.You have to give option inside select tag.And in option tag you should use value attribute.</li>
+            <li>Required attribute is used for important information so that the form is not submit without taking it.</li>
+        </ol>
+        <p>Example of Form:</p>
+        <h2>Student Registration Form</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <br></br>
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" required>
+            <br></br>
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob">
+            <br></br>
+            <label for="email">email id</label>
+            <input type="email" name="email" id="email" required>
+            <h3>Gender</h3>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male" placeholder="e.g.Arjun">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <br></br>
+            <label for=subject name="subject">Subject Selection</labe>
+            <select>
+                <option value="PCM" id=subject>PCM</option>
+                <option value="PCB" id=subject>PCB</option>
+                <option value="Commerce" id=subject>Commerce</option>
+                <option value="Arts" id=subject>Arts</option>
+            </select>
+            <br></br>
+            <label for="dream">Share your dream</label>
+            <textarea name="dream" id="dream">my dream is</textarea>
+           <br></br>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
