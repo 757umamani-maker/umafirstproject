@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <h1>My Fourth Day Of Learning Web Development</h1>
+        <ul>
+            <li><a href="index.html">1st lecture</a></li>
+            <li><a href="day2.html">2nd lecture</a></li>
+            <li><a href="day3.html">3rd lecture</a></li>
+            <li><a href="day4.html">4th lecture</a></li>
+            <li><a href="day5.html">5th lecture</a></li>
+            <li><a href="day6.html">6th lecture</a></li>
+        </ul>
+    </header>
+    <main>
+      <h2>Understanding File Path</h2>
+      <p>Whenever you want to enter image in your website you simply copy its address and paste it in src.</p>
+      <p>But what if that image is in your sydtem itself.</p>
+      <p>In this case we have to introduce file path.</p>
+      <p>There are two types of file path:</p>
+      <ol>
+        <li>Relative path:
+            <p>In relative path you need to show the way from the point where you are.</p>
+            <p>Suppose you have four folders and files inside them are in the following way:</p>
+            <ul>
+                <li><h3>root</h3>
+                    <ul>
+                        <li>lion.png</li>
+                        <li>cat.png</li>
+                        <li><h3>Alpha</h3>
+                           <ul>
+                            <li>dog.png</li>
+                            <li>index.html</li>
+                            <li><h3>Beta</h3>
+                                <ul>
+                                    <li>home.html</li>
+                                    <li>cow.png</li>
+                                    <li><h3>Photos</h3>
+                                        <ul>
+                                            <li>First.png</li>
+                                            <li>Second.png</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                           </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <p>Suppose you are writing code in index.html and you want a picture of dog so you simply write src="dog.png or ./dog.png"</p>
+        <p>If you want the picture of cow you should write src="Beta/cow.png or ./Beta/cow.png"</p>
+        <p>For second picture write src="Beta/Photos/second.png"</p>
+        <p>For cat picture write src="../cat.png"</p>
+        <p>If you are writing code in home.html for cat picture write src="../../cat.png"</p>
+        <p> In relative path also when it is trying to enter in your system then also browser did'nt support relative path.</p>
+        <li>Absolute path:
+            <p>In absolute path you need to show the way from starting to end.</p>
+            <p>Whenever you request for any website and it follows the absolute path to show result in your computer then it start from root to the place where you want to open it.</p>
+            <p>So it is dangerous for your computer because the website has access to reach main storage of your computer because in absolute path it starts from zero that's why browser did'nt support absolute path and did'nt show result. </p>
+        </li>
+      </ol>
+      <hr>
+      <h2>Why use Boilerplate code?</h2>
+      <ol>
+        <li>Because it is recommended method.</li>
+        <li>Also when you run HTML code without using Boilerplate code then it shows result without any error and according to your expectation.</li>
+        <li>But when you have to use CSS with HTML file then it can show unexpected error that's why we should use Boilerplate code.</li>
+      </ol>
+      <h2>Understanding Boilerplate code</h2>
+      <ul>
+        <li>Doctype html means we are using 5th version of HTML.</li>
+        <li>lang="" showing that most of the content is in which language.</li>
+        <li>Inside html there are two parts head and body 
+            <ol>
+                <li>head 
+                    <ul>
+                        <li>head is something that is not display in website.</li>
+                        <li>head tells meta data.meta data means data about data.</li>
+                        <li>Inside head title is used so that you can understand what website is about by reading it from above tab. </li>
+                        <li>meta name="viewport" is used so that you get option to open website in desktop-layout.</li>
+                        <li>content="width=device-width is used to set width of content according to your device.</li>
+                        <li>UTF-8 is a dictionary which contain all letters corresponding to their binary number.</li>
+                    </ul>
+                </li>
+                <li>Body 
+                    <p>It is the content which will display in website.</p>
+                </li>
+            </ol>
+        </li>
+      </ul>
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9e0iVPPXfiHZcHUf2srAH67Sc9Ethm3viOK9C1nJ2FIUtfp_X" height="200px" alt="syntax">
+      <h2>Div Tag</h2>
+      <p>It is like container which contain different tag and whatever same property we want to apply in different tag,instead of writing same property many times in different tag we simply write it in div and it applies to every tag inside it.</p>
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtWbJW1p6Oy6Wwb_65asXzqdhni9IH3d7A7HoAaXKoYFpgkH6-" height="200px" alt="syntax">
+      <h2>Class and id</h2>
+      <ul>
+        <li>Class is used for grouping multiple elements to apply property.</li>
+        <li>id is used to select element uniquelly.id is always unique.</li>
+      </ul>
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTygqWU5WN8MQgbpmGwJsa8Glx-71vhp40g15N7uhxftKXMv92f" height="200px" alt="differnce">
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
